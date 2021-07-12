@@ -1,4 +1,4 @@
-# Simple Car Shop
+# Simple CarShop Report
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Here is how you can clone & run the project:
 1- clone from the repository:
 
 ```sh
-$ git clone https://github.com/edi-621/carshop.git
+$ git clone https://github.com/Edward621/carshop-report.git
 ```
 
 2- Go to the project root directory:
