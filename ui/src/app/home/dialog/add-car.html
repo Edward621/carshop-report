@@ -1,0 +1,34 @@
+<form [formGroup]="carForm">
+
+  <mat-form-field appearance="standard" style="width:100%">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field appearance="standard" style="width:100%">
+    <mat-label>Price</mat-label>
+    <input matInput formControlName="price">
+  </mat-form-field>
+
+  <mat-form-field appearance="standard" style="width:100%">
+    <mat-label>sku</mat-label>
+    <input matInput formControlName="sku">
+  </mat-form-field>
+
+  <mat-form-field appearance="standard" style="width:100%">
+    <mat-label>model</mat-label>
+    <input matInput formControlName="model">
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    (click)="onNoClick()"
+    style="margin-right:12px"
+    >Cancel</button>
+  <button
+    [disabled]="carForm.invalid"
+    mat-raised-button color="primary"
+    [mat-dialog-close]="carForm.value"
+    cdkFocusInitial>Add</button>
+
+</form>
